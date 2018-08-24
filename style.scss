@@ -1,0 +1,139 @@
+body{
+  background:lightgrey;
+}
+
+.container{
+  display: flex;
+	align-items:center;
+	overflow: hidden;
+	margin:5% auto;
+	background:transparent;
+	border-radius: 0%;
+  height: 110px;
+  width:80px;
+ 
+ 	
+}
+$time: 4.5s;
+$margin: 5px;
+.line1{
+  width: 30%;
+  float:left;
+  opacity:0;
+  width: 10px;
+  height: 50px;
+  margin: $margin;
+  border-radius:15%;
+  background:black;
+  animation: load1 $time infinite ease-in;
+  transform: translateY(-20px);
+  
+  //box-shadow: 0px 0px 5px 5px white;
+}
+
+.line2{
+  width: 30%;
+  float:left;
+  opacity:0;
+  width: 10px;
+  height: 50px;
+  margin: $margin;
+  border-radius:15%;
+  background:black;
+  transform: translateY(-50px);
+  animation: load2 $time infinite ease-in;
+
+  //box-shadow: 0px 0px 5px 5px white;
+ 
+}
+.line3{
+  width: 30%;
+  float:left;
+  opacity:0;
+  width: 10px;
+  height: 50px;
+  margin: $margin;
+  border-radius:15%;
+  background:black;
+  transform: translateY(-50px);
+  animation: load3 $time infinite ease-in;
+  
+  //box-shadow: 0px 0px 5px 5px white;
+ 
+}
+.line4{
+  width: 30%;
+  float:left;
+  opacity:0;
+  width: 10px;
+  height: 50px;
+  margin: $margin;
+  border-radius:15%;
+  background:black;
+  transform: translateY(-50px);
+  animation: load4 $time infinite ease-in;
+ 
+ 
+  //box-shadow: 0px 0px 5px 5px white;
+ 
+}
+.line5{
+  //position: relative;
+  width: 130%;
+ 
+  opacity:0;
+ //left: -90%;
+  width: 10px;
+  height: 80px;
+  top: -10px;
+  margin: -$margin;
+  border-radius:15%;
+  background:lighten(black,15%);
+  transform: rotate(70deg);
+  z-index:5;
+  animation: load5 $time infinite ease-in;
+ 
+ 
+  //box-shadow: 0px 0px 5px 5px white;
+ 
+}
+
+
+@keyframes load1{
+  0% {opacity:0; }
+  
+  10% {opacity:0; }
+  
+  17% {opacity:1;transform: translateY(0px);}
+  93% {opacity:1;}
+  100%{transform: translateY(0px);}
+}
+@keyframes load2{
+  0% {opacity:0; }
+  24% {opacity:0; }
+  34% {opacity:1;transform: translateY(0px);}
+  93% {opacity:1;}
+  100%{transform: translateY(0px);}
+}
+@keyframes load3{
+  0% {opacity:0 }
+  44% {opacity:0; }
+  51% {opacity:1;transform: translateY(0px);}
+  93% {opacity:1;}
+  100%{transform: translateY(0px);}
+}@keyframes load4{
+  0% {opacity:0; }
+  61% {opacity:0; }
+  68% {opacity:1;transform: translateY(0px);}
+  93% {opacity:1; }
+  100%{transform: translateY(0px);}
+}
+@keyframes load5{
+  0% {opacity:0; }
+  78% {opacity:0; }
+  85% {opacity:1;}
+  93% {opacity:1;}
+  
+  99% {opacity:0;}
+
+}
